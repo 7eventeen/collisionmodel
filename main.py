@@ -1,11 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
-import pygame
 import sys
 import os
 
-pygame.init()
-collisionsound = pygame.mixer.Sound('file.wav')
+
 
 # GLOBAL C-VARS
 tk_width = 1280   #program width
@@ -64,7 +62,6 @@ class System:
             gui.aLabel3_m2.config(text='velocity after collision: ' + str(self.v2) + ' m/s')
             gui.aLabel4_m1.config(text='color: ' + gui.ComboBox1_m1.get())
             gui.aLabel4_m2.config(text='color: ' + gui.ComboBox1_m2.get())
-            collisionsound.play()
 
 
 class GUI:
